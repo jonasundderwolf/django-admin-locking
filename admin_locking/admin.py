@@ -10,7 +10,7 @@ class AdminLockingMixin(object):
     def locking(self, request, object_id):
         lock_url = request.POST.get('url')
         if not lock_url or not request.user.is_authenticated():
-            return JsonResponse(status=400)
+            return JsonResponse({}, status=400)
 
         lock_timeout = getattr(settings, 'ADMIN_LOCKING_TIMEOUT', 15)
         cache_key = 'admin-locking-%s-%s-%s' % (
@@ -34,7 +34,7 @@ class AdminLockingMixin(object):
             if request.POST.get('action') == 'clear':
                 # locked by requestor who wants it cleared - do so
                 cache.delete(cache_key)
-                return JsonResponse(status=204)
+                return JsonResponse({}, status=204)
 
         cache.set(cache_key, request.user.id, lock_timeout)
 
