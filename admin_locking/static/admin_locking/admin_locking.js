@@ -29,7 +29,7 @@
         }
         if ((data.status === 'locked') && !$('div.submit-row:first').hasClass('locked')) {
           // it's still locked
-          $('div.submit-row').html('<p>' + data.message + '</p>').addClass('locked');
+          $('div.submit-row').html('<p>' + data.message + '</p>').addClass('locked').css({background: '#d00', color: '#fff', textAlign: 'center'});
           $('#content-main input,textarea,select').prop('readonly', true).prop('disabled', true);
         }
         // keep checking/setting lock while on the page
