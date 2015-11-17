@@ -33,7 +33,7 @@
           $('#content-main input,textarea,select').prop('readonly', true).prop('disabled', true);
         }
         // keep checking/setting lock while on the page
-        timer = setInterval(update_lock, data.lock_timeout*1000);
+        timer = setTimeout(update_lock, data.lock_timeout*1000);
       }
     });
   }
