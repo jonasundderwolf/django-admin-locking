@@ -11,7 +11,7 @@ def read(*parts):
 
 setup(
     name="django-admin-locking",
-    version='0.1',
+    version='0.7',
     description="A reusable app for locking objects within the admin while another editor"
     "is editing the page.",
     long_description=open('README.rst').read(),
