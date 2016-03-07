@@ -2,5 +2,5 @@ include LICENSE.txt
 include CONTRIBUTORS
 include README.rst
 include MANIFEST.in
-recursive-include admin-locking/static *
-recursive-include admin-locking/locale *
+recursive-include admin_locking/static *
+recursive-include admin_locking/locale *
