@@ -15,9 +15,9 @@ setup(
     description="A reusable app for locking objects within the admin while another editor"
     "is editing the page.",
     long_description=open('README.rst').read(),
-    author="jonasvp",
-    author_email="jvp@jonasundderwolf.de",
-    url="https://dev.jonasundderwolf.de/opensource/django-admin-locking/",
+    author="Jonas und der Wolf GmbH",
+    author_email="info@jonasundderwolf.de",
+    url="https://github.com/jonasundderwolf/django-admin-locking",
     packages=find_packages(),
     include_package_data=True,
     test_suite='example.runtests.runtests',
