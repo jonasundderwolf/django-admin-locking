@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.core.cache import cache
-from django.conf.urls import url, patterns
+from django.conf.urls import url
 from django.contrib.auth import get_user_model
 from django.http import JsonResponse
 from django.utils.translation import ugettext as _
@@ -46,10 +46,9 @@ class AdminLockingMixin(object):
         })
 
     def get_urls(self):
-        return patterns(
-            '',
+        return [
             url(r'^(.+)/locking/$', self.admin_site.admin_view(self.locking)),
-        ) + super(AdminLockingMixin, self).get_urls()
+        ] + super().get_urls()
 
     class Media:
         js = ('admin_locking/admin_locking.js',)
