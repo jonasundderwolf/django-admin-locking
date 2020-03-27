@@ -9,7 +9,7 @@ from django.utils.translation import ugettext as _
 class AdminLockingMixin(object):
     def locking(self, request, object_id):
         lock_url = request.POST.get('url')
-        if not lock_url or not request.user.is_authenticated():
+        if not lock_url or not request.user.is_authenticated:
             return JsonResponse({}, status=400)
 
         lock_timeout = getattr(settings, 'ADMIN_LOCKING_TIMEOUT', 15)
