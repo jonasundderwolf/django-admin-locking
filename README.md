@@ -1,6 +1,10 @@
-====================
-django-admin-locking
-====================
+<a href="https://pypi.org/project/django-admin-locking/" alt="Pypi package">
+<img src="https://img.shields.io/pypi/v/django-admin-locking" />
+</a>
+
+
+# django-admin-locking
+
 
 Never lose work to another editor again!
 
