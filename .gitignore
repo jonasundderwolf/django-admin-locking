@@ -12,3 +12,4 @@ media/
 .coverage
 coverage_html_report
 settings_local.py
+.idea

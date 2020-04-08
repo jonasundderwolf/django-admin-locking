@@ -11,20 +11,23 @@ def read(*parts):
 
 setup(
     name="django-admin-locking",
-    version='0.8.2',
+    version='0.8.3',
     description="A reusable app for locking objects within the admin while another editor"
     "is editing the page.",
     long_description=open('README.rst').read(),
     author="Jonas und der Wolf GmbH",
-    author_email="info@jonasundderwolf.de",
+    author_email="opensource@jonasundderwolf.de",
     url="https://github.com/jonasundderwolf/django-admin-locking",
     packages=find_packages(),
     include_package_data=True,
-    test_suite='example.runtests.runtests',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Framework :: Django',
+        'Framework :: Django :: 1.11',
+        'Framework :: Django :: 2.2',
+        'Framework :: Django :: 3.0',
+        'Framework :: Django :: 3.1',
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
@@ -32,6 +35,9 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
 )
