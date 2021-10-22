@@ -10,7 +10,6 @@
     update_lock();
     // clear lock when clicking "save"
     $('div.submit-row input[type=submit]').click(clear_lock);
-    $(window).unload(clear_lock);
     try {
       $(window).unload(clear_lock);
     } catch (e) {
