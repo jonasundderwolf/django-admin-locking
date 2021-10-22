@@ -51,4 +51,7 @@ class AdminLockingMixin(object):
         ] + super().get_urls()
 
     class Media:
-        js = ('admin_locking/admin_locking.js',)
+        js = (
+            'admin/js/jquery.init.js',
+            'admin_locking/admin_locking.js',
+        )
