@@ -14,7 +14,7 @@
       $(window).unload(clear_lock);
     } catch (e) {
       $(window).on('unload', function(){
-        clear_lock
+        clear_lock;
       });
     }
   });
