@@ -3,10 +3,14 @@ django-admin-locking
 ====================
 
 
-.. image:: https://img.shields.io/pypi/v/django-admin-locking.svg
+.. image:: https://img.shields.io/pypi/v/django-admin-locking
     :target: https://pypi.python.org/pypi/django-admin-locking
 
-.. image:: https://img.shields.io/pypi/pyversions/django-admin-locking.svg
+.. image:: https://img.shields.io/pypi/pyversions/django-admin-locking
+    :target: https://pypi.python.org/pypi/django-admin-locking
+
+.. image:: https://img.shields.io/pypi/djversions/django-admin-locking
+    :alt: PyPI - Django Version
     :target: https://pypi.python.org/pypi/django-admin-locking
 
 Never lose work to another editor again!
