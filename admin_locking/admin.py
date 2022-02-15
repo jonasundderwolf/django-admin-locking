@@ -6,7 +6,10 @@ except ImportError:
     from django.urls import re_path as url
 from django.contrib.auth import get_user_model
 from django.http import JsonResponse
-from django.utils.translation import ugettext as _
+try:
+    from django.utils.translation import ugettext as _
+except ImportError:
+    from django.utils.translation import gettext as _
 
 
 class AdminLockingMixin(object):
