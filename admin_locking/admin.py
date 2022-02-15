@@ -1,6 +1,9 @@
 from django.conf import settings
 from django.core.cache import cache
-from django.conf.urls import url
+try:
+    from django.conf.urls import url
+except ImportError:
+    from django.urls import re_path as url
 from django.contrib.auth import get_user_model
 from django.http import JsonResponse
 from django.utils.translation import ugettext as _
