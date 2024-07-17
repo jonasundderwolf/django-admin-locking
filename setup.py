@@ -11,7 +11,7 @@ def read(*parts):
 
 setup(
     name="django-admin-locking",
-    version='0.9.0',
+    version='0.10.0',
     description="A reusable app for locking objects within the admin while another editor"
     "is editing the page.",
     long_description=open('README.rst').read(),
@@ -29,6 +29,9 @@ setup(
         'Framework :: Django :: 3.0',
         'Framework :: Django :: 3.1',
         'Framework :: Django :: 3.2',
+        'Framework :: Django :: 4.0',
+        'Framework :: Django :: 4.1',
+        'Framework :: Django :: 4.2',
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
